@@ -26,6 +26,7 @@
     "lint": "npm run lint:types && eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix && npm run prettier",
     "lint:types": "tsc --noEmit",
+    "prepare" : "npm run build",
     "prettier": "prettier --write --config ./.prettierrc \"./src/**/*.{ts,tsx}\"",
     "prepublishOnly": "npm run build"
   },
